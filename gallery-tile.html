@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from html.modernwebtemplates.com/towy/gallery-tile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Apr 2025 09:50:31 GMT -->
+<head>
+	<title>Towy</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-left text-md-center">
+							<div class="logo_wrapper">
+
+								<a href="index.html" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="highlight">Tow Time</span>
+										<span>Towing Services</span>
+									</span>
+								</a>
+
+							</div>
+							<!-- header toggler -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Home</a>
+										
+									</li>
+									<li>
+										<a href="gallery-tile.html">Gallery</a>
+									</li>
+									<li>
+										<a href="about.html">About</a>
+									</li>
+									
+									<!-- eof pages -->
+
+									
+									<!-- eof features -->
+
+								
+
+								
+
+									<!-- contacts -->
+									<li>
+										<a href="contact.html">Contact</a>
+										
+									</li>
+									<!-- eof contacts -->
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs cs background_cover section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Gallery Tile</h2>
+							<ol class="breadcrumb">
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Gallery</a>
+								</li>
+								<li class="active">Gallery Tile</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls page_portfolio section_padding_top_100 section_padding_bottom_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<!-- <div class="filters isotope_filters text-center">
+								<a href="#" data-filter="*" class="selected">All</a>
+								<a href="#" data-filter=".category1">Category 1</a>
+								<a href="#" data-filter=".category2">Category 2</a>
+								<a href="#" data-filter=".category3">Category 3</a>
+								<a href="#" data-filter=".category4">Category 4</a>
+							</div> -->
+
+
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20" data-filters=".isotope_filters">
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category3 category1">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/03.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/03.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category2 category3">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/01.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/01.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category4">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/07.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/07.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-md-6 col-sm-6 category1 category2">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/02.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/02.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-md-6 col-sm-6 category3 category4">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/04.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/04.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category1">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/10.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/10.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category2">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/11.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/11.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="isotope-item col-lg-6 col-md-6 col-sm-6 category4">
+									<div class="vertical-item gallery-item content-absolute text-center ds">
+										<div class="item-media">
+											<img src="images/gallery/tile/12.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/12.jpg"></a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="item-content darken_gradient">
+											<h4>
+												<a href="gallery-single.html">Consetetur sadipscing elitr, sed diam nonumy</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<!-- eof .isotope_container.row -->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+
+			<footer class="page_footer ds section_padding_top_65 section_padding_bottom_50 columns_margin_bottom_40">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+
+							<a href="index.html" class="logo">
+								<img src="images/logo.png" alt="">
+								<span class="logo_text">
+									<span class="highlight">Tow Time</span>
+									<span>Towing Services</span>
+								</span>
+							</a>
+
+							<p>
+								Shank duis pancetta kevin ullamco tempor short loin pig lorem officia ut ham hock incididunt irure drumstick sage ball tip tri-tip.
+							</p>
+
+							<p>
+								<a href="#" class="social-icon theme-color-icon soc-twitter"></a>
+								<a href="#" class="social-icon theme-color-icon soc-facebook"></a>
+								<a href="#" class="social-icon theme-color-icon soc-google"></a>
+								<a href="#" class="social-icon theme-color-icon soc-linkedin"></a>
+								<a href="#" class="social-icon theme-color-icon soc-pinterest"></a>
+							</p>
+
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+							<div class="topmargin_15 columns_margin_0">
+								<div class="widget widget_pages">
+
+									<h3 class="widget-title">Useful
+										<strong>Links</strong>
+									</h3>
+									<hr class="divider_30_3 zebra_bg divider_left">
+									<div class="row columns_padding_0 columns_margin_0">
+										<div class="col-xs-6">
+											<ul class="greylinks">
+												<li>
+													<a href="about.html">About</a>
+												</li>
+												
+												<li>
+													<a href="gallery-tile.html">Gallery</a>
+												</li>
+												<li>
+													<a href="contact.html">Contacts</a>
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+							<div class="widget widget_text topmargin_15">
+								<h3 class="widget-title">Get in
+									<strong>Touch</strong>
+								</h3>
+								<hr class="divider_30_3 zebra_bg divider_left">
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-map-marker highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										India 
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-envelope highlight fontsize_18"></i>
+									</div>
+									<div class="media-body greylinks">
+										<a href="cdn-cgi/l/email-protection#e0998f9592a08d81898cce838f8d"><span class="__cf_email__" data-cfemail="4c3f393c3c233e380c38233b35622f2321">Towtime@email.com</span></a>
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-phone highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										8296356357
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-clock-o highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										24 hours a day, 7 days a week
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-12 to_animate" data-animation="fadeInUp">
+							<div class="topmargin_15">
+								<div class="widget widget_twitter">
+									<h3 class="widget-title">Latest
+										<strong>Tweets</strong>
+									</h3>
+									<hr class="divider_30_3 zebra_bg divider_left">
+									<div class="twitter"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="ds ms page_copyright section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="lightfont">Tow Time - Towing Services
+								<i class="fa fa-heart highlight" aria-hidden="true"></i> All Rights Reserved &copy; 2024</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/towy/gallery-tile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Apr 2025 09:50:37 GMT -->
+</html>
