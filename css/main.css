@@ -14596,7 +14596,7 @@ tr.item-editable .media-left img {
 }
 
 .calling-widget-after {
-    background-color: rgba(230, 8, 8, 0.7);
+    background-color: rgb(35 217 72 / 70%);
     border-radius: 50%;
     padding: 1rem;
     animation: c-pulse-animation 1.5s infinite;
