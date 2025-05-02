@@ -378,9 +378,9 @@ function documentReadyInit() {
 	}
 
 	//toTop
-	if (jQuery().UItoTop) {
-		jQuery().UItoTop({ easingType: 'easeInOutQuart' });
-	}
+	// if (jQuery().UItoTop) {
+	// 	jQuery().UItoTop({ easingType: 'easeInOutQuart' });
+	// }
 
 	//parallax
 	if (jQuery().parallax) {
@@ -1220,3 +1220,18 @@ $window.on('resize', function(){
 });
 //end of IIFE function
 })();
+
+// whatsapp
+
+var mainDiv = document.getElementById('main-button');
+mainDiv.addEventListener('click', function(){
+  this.children.item(0).classList.toggle('fa-times');
+  this.classList.toggle('open');
+});
+
+// using jQuery
+// var mainDiv =  $('#main-button');
+// mainDiv.on('click', function(){
+//   $(this).find('i').toggleClass('fa-times');
+//   $(this).toggleClass('open');
+// });
