@@ -7855,7 +7855,11 @@ body.active-side-header.slide-right .page_header_side {
 .page_map .map_marker_description {
 	padding: 10px 5px 5px;
 }
-
+@media (max-width: 768px) {
+	.map_marker_description2{
+		display: none;
+	}
+}
 #map .map_marker_icon,
 .page_map .map_marker_icon {
 	display: none;
