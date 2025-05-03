@@ -5,7 +5,7 @@
 
 
 <head>
-	
+
 	<title>Towy</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
@@ -22,8 +22,35 @@
 	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.location-box {
+			position: relative;
+			/* width: 300px; */
+			/* margin: 40px auto; */
+		}
+
+		.location-box input {
+			width: 100%;
+			padding: 10px 40px 10px 10px;
+			border: 1px solid #ccc;
+			/* border-radius: 8px; */
+			/* font-size: 16px; */
+		}
+
+		.location-icon {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			/* font-size: 18px;
+			color: #666; */
+		}
+	</style>
 </head>
 
 <body>
@@ -35,10 +62,10 @@
 		<div class="preloader_image"></div>
 	</div>
 
-	
 
-	
-	
+
+
+
 	<!-- eof .modal -->
 
 	<!-- wrappers for visual page editor and boxed version of template -->
@@ -184,7 +211,7 @@
 								<ul class="mainmenu nav sf-menu">
 									<li class="active">
 										<a href="index.html">Home</a>
-										
+
 									</li>
 									<li>
 										<a href="gallery-tile.html">Gallery</a>
@@ -192,20 +219,20 @@
 									<li>
 										<a href="about.html">About</a>
 									</li>
-									
+
 									<!-- eof pages -->
 
-									
+
 									<!-- eof features -->
 
-								
 
-								
+
+
 
 									<!-- contacts -->
 									<li>
 										<a href="contact.html">Contact</a>
-										
+
 									</li>
 									<!-- eof contacts -->
 								</ul>
@@ -216,7 +243,8 @@
 				</div>
 			</header>
 
-			<section id="contacts" class="ds columns_margin_0 columns_padding_0 table_section table_section_lg overflow-hidden">
+			<section id="contacts"
+				class="ds columns_margin_0 columns_padding_0 table_section table_section_lg overflow-hidden">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-4 text-center" data-animation="fadeInLeft">
@@ -277,7 +305,7 @@
 
 						<div class="col-md-12 to_animate" data-animation="scaleAppear">
 
-							<h2 class="section_header">Booking 
+							<h2 class="section_header">Booking
 								<strong>Online</strong>
 							</h2>
 							<hr class="divider_30_3 bottommargin_30 divider_left zebra_bg">
@@ -289,7 +317,8 @@
 											<label for="name" class="sr-only">Mobile Number
 												<span class="required">*</span>
 											</label>
-											<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Mobile Number">
+											<input type="text" aria-required="true" size="30" value="" name="name"
+												id="name" class="form-control" placeholder="Mobile Number">
 										</div>
 									</div>
 									<div class="col-xs-6">
@@ -297,44 +326,49 @@
 											<label for="last-name" class="sr-only">Vahicle Reg Number
 												<span class="required">*</span>
 											</label>
-											<input type="text" aria-required="true" size="30" value="" name="last-name" id="last-name" class="form-control" placeholder="Vahicle Reg Number">
+											<input type="text" aria-required="true" size="30" value="" name="last-name"
+												id="last-name" class="form-control" placeholder="Vahicle Reg Number">
 										</div>
 									</div>
 									<div class="col-xs-6">
 										<div class="form-group">
 											<label for="email" class="sr-only">Vehicle Make & Mode</label>
-											<input type="text" size="30" value="" name="email" id="email" class="form-control" placeholder="Vehicle Make & Mode">
+											<input type="text" size="30" value="" name="email" id="email"
+												class="form-control" placeholder="Vehicle Make & Mode">
 										</div>
 									</div>
 									<div class="col-xs-6">
 										<div class="form-group">
-											<label for="phone" class="sr-only">Pickup Location
-												<span class="required">*</span>
-											</label>
-											<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Pickup Location">
+											<div class="location-box">
+												<input type="text" id="locationInput" placeholder="Pickup Location">
+												<span class="location-icon" onclick="getLocation()">📍</span>
+											</div>
 										</div>
 									</div>
+
 									<div class="col-xs-6">
 										<div class="form-group">
-											<label for="phone" class="sr-only">Drop Location
-												<span class="required">*</span>
-											</label>
-											<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Drop Location">
+											<div class="location-box">
+												<input type="text" id="cityInput2" placeholder="Drop Location">
+												<span class="location-icon" 
+												>📍</span>
+											</div>
 										</div>
 									</div>
 									<div class="col-xs-6">
 										<p class="form-submit">
-											<button type="submit" id="submit" name="submit" class="theme_button">Book Now</button>
+											<button type="submit" id="submit" name="submit" class="theme_button">Book
+												Now</button>
 										</p>
 									</div>
 								</div>
-								
+
 							</form>
 
 						</div>
 						<!--.col-* -->
 
-						
+
 						<!--.col-* -->
 
 					</div>
@@ -345,7 +379,8 @@
 
 			</section>
 
-			<section id="about" class="ls  section_padding_bottom_150 table_section table_section_md columns_padding_25 columns_margin_bottom_30">
+			<section id="about"
+				class="ls  section_padding_bottom_150 table_section table_section_md columns_padding_25 columns_margin_bottom_30">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7 col-md-6 text-center text-md-right">
@@ -358,7 +393,10 @@
 							<p class="small-text">effective flatbed transportation</p>
 							<hr class="divider_30_3 zebra_bg">
 							<p>
-								We offer quick, reliable, and affordable towing services across India. Backed by full insurance and over three decades of experience since 2015, our team is committed to delivering prompt assistance whenever you need it. Whether it’s day or night, our 24/7 emergency vehicle support is just a call away — ensuring you're never stranded.
+								We offer quick, reliable, and affordable towing services across India. Backed by full
+								insurance and over three decades of experience since 2015, our team is committed to
+								delivering prompt assistance whenever you need it. Whether it’s day or night, our 24/7
+								emergency vehicle support is just a call away — ensuring you're never stranded.
 							</p>
 							<div class="inline-block topmargin_10">
 								<ul class="list1 checklist grey">
@@ -372,10 +410,12 @@
 										<strong>zero hidden fees</strong>
 									</li>
 									<li>Friendly and
-										<strong>professional</strong> service</li>
+										<strong>professional</strong> service
+									</li>
 									<li>Available
 										<strong>24 hours</strong> a day,
-										<strong>7 days</strong> a week</li>
+										<strong>7 days</strong> a week
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -383,7 +423,8 @@
 				</div>
 			</section>
 
-			<section id="features" class="ds parallax section_counters section_padding_top_130 section_padding_bottom_75 columns_margin_bottom_60">
+			<section id="features"
+				class="ds parallax section_counters section_padding_top_130 section_padding_bottom_75 columns_margin_bottom_60">
 				<div class="container-fluid">
 					<div class="col-md-3 col-sm-6">
 						<div class="teaser text-center">
@@ -441,9 +482,22 @@
 								<div class="teaser text-center">
 									<img src="images/icons/towing.png" alt="" />
 									<h4 class="regular">
-										<a href="service-single.html">Two-Wheeler Towing</a>
+										<a href="">Two-Wheeler Towing</a>
 									</h4>
-									<p>Stuck with a bike breakdown? Tow Time offers fast and reliable two-wheeler towing services to get you moving again—anytime, anywhere.</p>
+									<p>Stuck on the roadside with a bike breakdown? Whether it’s a flat tire, engine
+										trouble, or an unexpected issue in the middle of nowhere — Tow Time is your
+										reliable partner in two-wheeler towing services. We understand how frustrating
+										and unsafe it can be to get stranded, especially on a busy road or in an
+										unfamiliar location. That’s why we’re committed to providing fast, safe, and
+										professional bike towing assistance — 24 hours a day, 7 days a week.</p>
+									<p>No matter where you are — within the city limits or in a nearby area — our team
+										of trained towing professionals will be at your location quickly to ensure your
+										vehicle is handled with care and transported safely to your preferred
+										destination or service center.</p>
+									<p>Our modern tow trucks and equipment are specially designed to accommodate
+										motorcycles, scooters, and other two-wheelers, ensuring zero damage during
+										loading, transit, and unloading. With Tow Time, you get more than just towing —
+										you get peace of mind, knowing that help is just a phone call away.</p>
 
 								</div>
 							</div>
@@ -453,9 +507,22 @@
 								<div class="teaser text-center">
 									<img src="images/icons/hail.png" alt="" />
 									<h4 class="regular">
-										<a href="service-single.html">Four-Wheeler Towing</a>
+										<a href="">Four-Wheeler Towing</a>
 									</h4>
-									<p>Whether it’s a flat tire or engine trouble, Tow Time provides safe and professional four-wheeler towing at your convenience, 24/7 support guaranteed.</p>
+									<p>Whether you’re facing a flat tire, engine failure, battery drain, or an
+										unexpected roadside emergency, Tow Time is here to help. We provide fast, safe,
+										and professional four-wheeler towing services designed to give you peace of mind
+										— no matter the time or place.</p>
+									<p>From compact cars to SUVs and light commercial vehicles, our team is equipped
+										with the right tools and experience to handle every situation with care and
+										efficiency. Your vehicle's safety is our top priority, and we take every
+										precaution to ensure it is towed without damage.</p>
+									<p>Car troubles don’t follow a schedule — and neither do we. Whether it’s midnight,
+										early morning, or a weekend holiday, our towing experts are available
+										round-the-clock, ready to assist you wherever you are. With GPS-enabled dispatch
+										and prompt response time, we’ll make sure help reaches you fast.
+
+									</p>
 
 								</div>
 							</div>
@@ -465,14 +532,14 @@
 								<div class="teaser text-center">
 									<img src="images/icons/flood.png" alt="" />
 									<h4 class="regular">
-										<a href="service-single.html">Flood Insurance Coverage</a>
+										<a href="">Flood Insurance Coverage</a>
 									</h4>
 									<p>Shankle pastrami jerky spare ribs pancetta hamburger aute occaecat andouille corned beef quis capicola fugiat ea flank.</p>
 
 								</div>
 							</div>
 						</div> -->
-						
+
 					</div>
 				</div>
 			</section>
@@ -481,7 +548,8 @@
 				<div class="container-fluid">
 					<div class="row row_columns_padding_0 display_table_md">
 
-						<div class="cs col-md-6 section_padding_top_60 section_padding_bottom_65 display_table_cell_md vertical_top">
+						<div
+							class="cs col-md-6 section_padding_top_60 section_padding_bottom_65 display_table_cell_md vertical_top">
 							<div class="container-left-half horizontal-center">
 								<div class="row">
 									<div class="col-sm-12 text-center" data-animation="fadeInLeft">
@@ -491,7 +559,10 @@
 										<p class="small-text">Fast and Courteous specialists</p>
 										<hr class="divider_30_3 zebra_bg">
 										<p class="topmargin_90 bottommargin_90 grey">
-											We’re looking for dedicated, responsible, and hardworking individuals to join the Tow Time crew. If you’re passionate about helping others and ready to hit the road with a professional towing team, we’d love to hear from you. Start your journey with us today!
+											We’re looking for dedicated, responsible, and hardworking individuals to
+											join the Tow Time crew. If you’re passionate about helping others and ready
+											to hit the road with a professional towing team, we’d love to hear from you.
+											Start your journey with us today!
 										</p>
 										<a href="#" class="theme_button">Apply today</a>
 									</div>
@@ -500,7 +571,8 @@
 						</div>
 
 
-						<div class="ds col-md-6 section_padding_top_60 section_padding_bottom_65 display_table_cell_md vertical_top">
+						<div
+							class="ds col-md-6 section_padding_top_60 section_padding_bottom_65 display_table_cell_md vertical_top">
 							<div class="container-right-half horizontal-center wide-half-container">
 								<div class="row">
 									<div class="col-md-12 text-center" data-animation="fadeInRight">
@@ -518,7 +590,9 @@
 														<label for="full-name" class="sr-only">Full Name
 															<span class="required">*</span>
 														</label>
-														<input type="text" aria-required="true" size="30" value="" name="full-name" id="full-name" class="form-control" placeholder="Full Name">
+														<input type="text" aria-required="true" size="30" value=""
+															name="full-name" id="full-name" class="form-control"
+															placeholder="Full Name">
 													</div>
 												</div>
 												<div class="col-sm-6">
@@ -526,7 +600,9 @@
 														<label for="phone-number" class="sr-only">Phone Number
 															<span class="required">*</span>
 														</label>
-														<input type="text" aria-required="true" size="30" value="" name="phone-number" id="phone-number" class="form-control" placeholder="Phone Number">
+														<input type="text" aria-required="true" size="30" value=""
+															name="phone-number" id="phone-number" class="form-control"
+															placeholder="Phone Number">
 													</div>
 												</div>
 												<div class="col-sm-6">
@@ -534,7 +610,9 @@
 														<label for="start-address" class="sr-only">Tow From
 															<span class="required">*</span>
 														</label>
-														<input type="text" aria-required="true" size="30" value="" name="start-address" id="start-address" class="form-control" placeholder="Tow From">
+														<input type="text" aria-required="true" size="30" value=""
+															name="start-address" id="start-address" class="form-control"
+															placeholder="Tow From">
 													</div>
 												</div>
 												<div class="col-sm-6">
@@ -542,7 +620,9 @@
 														<label for="end-address" class="sr-only">Tow To
 															<span class="required">*</span>
 														</label>
-														<input type="text" aria-required="true" size="30" value="" name="end-address" id="end-address" class="form-control" placeholder="Tow To">
+														<input type="text" aria-required="true" size="30" value=""
+															name="end-address" id="end-address" class="form-control"
+															placeholder="Tow To">
 													</div>
 												</div>
 												<div class="col-sm-6">
@@ -551,8 +631,10 @@
 															<span class="required">*</span>
 														</label>
 														<div class="input-group">
-															<select aria-required="true" id="vechicle" name="vechicle" class="choice empty form-control">
-																<option value="" disabled selected data-default>Vechicle Type</option>
+															<select aria-required="true" id="vechicle" name="vechicle"
+																class="choice empty form-control">
+																<option value="" disabled selected data-default>Vechicle
+																	Type</option>
 																<option value="january">Type 1</option>
 																<option value="february">Type 2</option>
 																<option value="march">Type 3</option>
@@ -565,13 +647,15 @@
 														<label for="tow-date" class="sr-only">Date
 															<span class="required">*</span>
 														</label>
-														<input type="text" name="tow-date" id="tow-date" value="" class="form-control" placeholder="Date">
+														<input type="text" name="tow-date" id="tow-date" value=""
+															class="form-control" placeholder="Date">
 														<i class="fa fa-calendar grey" aria-hidden="true"></i>
 													</div>
 												</div>
 											</div>
 											<p class="form-submit">
-												<button type="submit" id="submit" name="submit" class="theme_button color1">Submit now</button>
+												<button type="submit" id="submit" name="submit"
+													class="theme_button color1">Submit now</button>
 											</p>
 										</form>
 
@@ -618,7 +702,8 @@
 									</header>
 									<!-- .entry-header -->
 
-									<p>What is stopping you from believing in the business of your dreams? Insecurity? Fear? Lack of confidence?</p>
+									<p>What is stopping you from believing in the business of your dreams? Insecurity?
+										Fear? Lack of confidence?</p>
 
 									<div class="entry-meta">
 
@@ -653,13 +738,15 @@
 									<header class="entry-header">
 
 										<h3 class="entry-title">
-											<a href="" rel="bookmark">Towing Service - How to Choose a Quality Service</a>
+											<a href="" rel="bookmark">Towing Service - How to Choose a Quality
+												Service</a>
 										</h3>
 
 									</header>
 									<!-- .entry-header -->
 
-									<p>You can’t truly plan for a road side break-down and road accidents. But in the midst of all the confusion...</p>
+									<p>You can’t truly plan for a road side break-down and road accidents. But in the
+										midst of all the confusion...</p>
 
 									<div class="entry-meta">
 
@@ -694,13 +781,15 @@
 									<header class="entry-header">
 
 										<h3 class="entry-title">
-											<a href="" rel="bookmark">4 Reasons You May Need Heavy Towing For Your Car</a>
+											<a href="" rel="bookmark">4 Reasons You May Need Heavy Towing For Your
+												Car</a>
 										</h3>
 
 									</header>
 									<!-- .entry-header -->
 
-									<p>Your automobile is bound to run into issues, whether it be the brakes or the engine, cars simply are not meant...</p>
+									<p>Your automobile is bound to run into issues, whether it be the brakes or the
+										engine, cars simply are not meant...</p>
 
 									<div class="entry-meta">
 
@@ -728,30 +817,58 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="owl-carousel" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="true" data-margin="0">
+							<div class="owl-carousel" data-responsive-lg="1" data-responsive-md="1"
+								data-responsive-sm="1" data-nav="true" data-margin="0">
 								<blockquote>
-									<img src="images/faces/01.jpg" alt="" />
-									 Super quick and reliable! My car broke down late at night and Tow Time reached within 20 minutes. The team was polite, professional, and handled everything smoothly. Highly recommended!
-									<div class="item-meta lightfont">
-										<h5 class="highlight">Rajesh Kumar</h5>
-										
+
+									Super quick and reliable! My car broke down late at night and Tow Time reached
+									within 20 minutes. The team was polite, professional, and handled everything
+									smoothly. Highly recommended!
+
+									<div class="users-icon">
+										<img src="images/user-img.jpg" alt="" />
+
+										<div class="item-meta lightfont">
+											<h5 class="highlight">Rajesh Kumar</h5>
+											<p>Customer</p>
+
+										</div>
 									</div>
+
 								</blockquote>
 
 								<blockquote>
-									<img src="images/faces/02.jpg" alt="" /> Got my bike towed without any hassle. The service was affordable, fast, and the staff was very courteous. Will definitely use Tow Time again if needed.
-									<div class="item-meta lightfont">
-										<h5 class="highlight">Sagar yadav</h5>
+
+									Got my bike towed without any hassle. The service was affordable, fast, and the
+									staff was very courteous. Will definitely use Tow Time again if needed.
+
+									<div class="users-icon">
+										<img src="images/user-img.jpg" alt="" />
+
+										<div class="item-meta lightfont">
+											<h5 class="highlight">Sagar yadav</h5>
+											<p>Customer</p>
+
+										</div>
 									</div>
+
 								</blockquote>
 
 								<blockquote>
-									<img src="images/faces/02.jpg" alt="" /> 
 									“Excellent service experience!”
-									Had an issue with my SUV on the highway—Tow Time responded quickly and towed it safely to the garage. Totally stress-free.
-									<div class="item-meta lightfont">
-										<h5 class="highlight">Amit Kumar</h5>
+									Had an issue with my SUV on the highway—Tow Time responded quickly and towed it
+									safely to the garage. Totally stress-free.
+
+									<div class="users-icon">
+										<img src="images/user-img.jpg" alt="" />
+
+										<div class="item-meta lightfont">
+											<h5 class="highlight">Amit Kumar</h5>
+											<p>Customer</p>
+
+										</div>
 									</div>
+
 								</blockquote>
 
 							</div>
@@ -760,12 +877,16 @@
 				</div>
 			</section>
 
-			<section id="faq" class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30 table_section table_section_md">
+			<section id="faq"
+				class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30 table_section table_section_md">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-7 text-center">
 							<div>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773484.55170563!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1746011421012!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773484.55170563!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1746011421012!5m2!1sen!2sin"
+									width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 							<p class="bold">- Number of our offices</p>
 						</div>
@@ -787,21 +908,24 @@
 									</div>
 									<div id="collapse1" class="panel-collapse collapse in">
 										<div class="panel-body">
-											We offer towing services across the city and nearby areas. For long-distance towing, please contact us directly to confirm availability.
+											We offer towing services across the city and nearby areas. For long-distance
+											towing, please contact us directly to confirm availability.
 										</div>
 									</div>
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2"
+												class="collapsed">
 												Q2: Are your services available 24/7?
 											</a>
 										</h4>
 									</div>
 									<div id="collapse2" class="panel-collapse collapse">
 										<div class="panel-body">
-											Yes, Tow Time is available 24/7. Whether it's day or night, we're just a call away in case of a breakdown or emergency.
+											Yes, Tow Time is available 24/7. Whether it's day or night, we're just a
+											call away in case of a breakdown or emergency.
 
 
 										</div>
@@ -810,14 +934,16 @@
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3"
+												class="collapsed">
 												Q3: What types of vehicles do you tow?
 											</a>
 										</h4>
 									</div>
 									<div id="collapse3" class="panel-collapse collapse">
 										<div class="panel-body">
-											We tow two-wheelers, cars, SUVs, and light commercial vehicles. Our equipment is designed to safely handle a variety of vehicle types.
+											We tow two-wheelers, cars, SUVs, and light commercial vehicles. Our
+											equipment is designed to safely handle a variety of vehicle types.
 										</div>
 									</div>
 								</div>
@@ -825,14 +951,118 @@
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4"
+												class="collapsed">
 												Q4: How long does it take for your team to arrive?
 											</a>
 										</h4>
 									</div>
 									<div id="collapse4" class="panel-collapse collapse">
 										<div class="panel-body">
-											Our average response time is 20–30 minutes, depending on your location and traffic conditions.
+											Our average response time is 20–30 minutes, depending on your location and
+											traffic conditions.
+										</div>
+									</div>
+								</div>
+
+								<!-- 5 -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse5"
+												class="collapsed">
+												Q5: Do you offer roadside assistance in addition to towing?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse5" class="panel-collapse collapse">
+										<div class="panel-body">
+											Yes, we do! Our services go beyond just towing. We provide complete roadside
+											assistance including battery jump-starts, flat tire changes, fuel delivery,
+											and minor mechanical repairs. If your vehicle has a minor issue that can be
+											fixed on the spot, our trained technicians will help you get back on the
+											road quickly — no need for a tow unless absolutely necessary.
+										</div>
+									</div>
+								</div>
+								<!-- 6 -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse6"
+												class="collapsed">
+												Q6: How do I request a towing service?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse6" class="panel-collapse collapse">
+										<div class="panel-body">
+											Requesting our towing service is simple and hassle-free. You can call our
+											24/7 helpline number directly or book through our website. We recommend
+											sharing your exact location, the type of issue you're facing, and your
+											vehicle details so we can dispatch the appropriate assistance as quickly as
+											possible.
+										</div>
+									</div>
+								</div>
+
+								<!-- 7 -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse7"
+												class="collapsed">
+												Q7: Is your towing service available for both private and commercial
+												vehicles?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse7" class="panel-collapse collapse">
+										<div class="panel-body">
+											Absolutely. We cater to both personal vehicle owners and commercial
+											businesses. Whether you drive a compact car, SUV, motorcycle, delivery van,
+											or even a small truck, we have the equipment and expertise to handle your
+											towing needs efficiently and safely.
+										</div>
+									</div>
+								</div>
+								<!-- 8 -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse8"
+												class="collapsed">
+												Q8: Are there any hidden charges in your service fees?
+												A:
+											</a>
+										</h4>
+									</div>
+									<div id="collapse8" class="panel-collapse collapse">
+										<div class="panel-body">
+											No, we believe in complete transparency. All our service charges are
+											communicated upfront before we begin any work. The price we quote includes
+											everything — there are no surprise fees or hidden costs. We value your trust
+											and ensure you get fair and honest service every time.
+										</div>
+									</div>
+								</div>
+								<!-- 9 -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse9"
+												class="collapsed">
+												Q9: What safety measures do you follow during towing?
+											</a>
+										</h4>
+									</div>
+									<div id="collapse9" class="panel-collapse collapse">
+										<div class="panel-body">
+											Safety is our top priority. Our team follows strict protocols to ensure both
+											your vehicle and our staff are protected during the towing process. We use
+											certified equipment, secure your vehicle properly to avoid damage, and
+											follow all traffic regulations. Our staff is trained to handle emergency
+											situations with calm and care.
 										</div>
 									</div>
 								</div>
@@ -847,7 +1077,8 @@
 			<section class="ds columns_margin_0 columns_padding_0 table_section table_section_lg">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-4 text-center with_skew_bg skew_right main_bg_color cs" data-animation="fadeInLeft">
+						<div class="col-lg-4 text-center with_skew_bg skew_right main_bg_color cs"
+							data-animation="fadeInLeft">
 							<div class="with_icon_bg with_padding_small">
 								<i class="fa fa-envelope background-icon"></i>
 								<h3 class="text-uppercase grey margin_0">
@@ -869,7 +1100,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 text-center with_skew_bg skew_left main_bg_color cs" data-animation="fadeInRight">
+						<div class="col-lg-4 text-center with_skew_bg skew_left main_bg_color cs"
+							data-animation="fadeInRight">
 							<div class="with_icon_bg with_padding_small">
 								<i class="towyicon-newspaper background-icon"></i>
 								<h3 class="text-uppercase grey margin_0">
@@ -898,7 +1130,8 @@
 							</a>
 
 							<p>
-								We provide fast, safe, and affordable towing services for two-wheelers and four-wheelers across the city. Trust Tow Time—your roadside rescue partner, 24/7.
+								We provide fast, safe, and affordable towing services for two-wheelers and four-wheelers
+								across the city. Trust Tow Time—your roadside rescue partner, 24/7.
 							</p>
 
 							<p>
@@ -925,7 +1158,7 @@
 												<li>
 													<a href="about.html">About</a>
 												</li>
-												
+
 												<li>
 													<a href="gallery-tile.html">Gallery</a>
 												</li>
@@ -934,7 +1167,7 @@
 												</li>
 											</ul>
 										</div>
-										
+
 									</div>
 								</div>
 							</div>
@@ -952,7 +1185,7 @@
 										<i class="fa fa-map-marker highlight fontsize_18"></i>
 									</div>
 									<div class="media-body">
-										India 
+										India
 									</div>
 								</div>
 								<div class="media small-teaser">
@@ -960,7 +1193,9 @@
 										<i class="fa fa-envelope highlight fontsize_18"></i>
 									</div>
 									<div class="media-body greylinks">
-										<a href="cdn-cgi/l/email-protection#e0998f9592a08d81898cce838f8d"><span class="__cf_email__" data-cfemail="4c3f393c3c233e380c38233b35622f2321">Towtimein@gmail.com</span></a>
+										<a href="cdn-cgi/l/email-protection#e0998f9592a08d81898cce838f8d"><span
+												class="__cf_email__"
+												data-cfemail="4c3f393c3c233e380c38233b35622f2321">Towtimein@gmail.com</span></a>
 									</div>
 								</div>
 								<div class="media small-teaser">
@@ -982,7 +1217,7 @@
 							</div>
 						</div>
 
-			
+
 					</div>
 				</div>
 			</footer>
@@ -992,37 +1227,84 @@
 					<div class="row">
 						<div class="col-sm-12 text-center">
 							<p class="lightfont">Tow Time - Towing Services
-								<i class="fa fa-heart highlight" aria-hidden="true"></i> All Rights Reserved &copy; 2024</p>
+								<i class="fa fa-heart highlight" aria-hidden="true"></i> All Rights Reserved &copy; 2024
+							</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- whatsapp-widget -->
-			 <div class="wrapper">
-			<div id="main-div">
-			  <div id="main-button" class="wave open">
-				<i class="fas fa-comments fa-times"></i>
-			  </div>
-			  <button><a href="tel:8050833290"><i class="fas fa-phone-alt"></i> </a> Free Consultation</button>
-			  
-			  <a href="https://api.whatsapp.com/send?phone=8050833290" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
-			
+			<div class="floating-widgets">
+				<div class="">
+					<a href="https://wa.me/918050833290" target="_blank">
+						<img src="./images/icon.png" alt="">
+					</a>
+				</div>
+
 			</div>
-		  </div>
+
+			<div class="floating-widgets add-new">
+
+				<div class="">
+					<a href="tel:+918050833290" target="_blank">
+						<img src="./images/call-img.png" alt="">
+					</a>
+				</div>
+			</div>
 		</div>
 		<!-- eof #box_wrapper -->
 	</div>
 	<!-- eof #canvas -->
 
-	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/compressed.js"></script>
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/vendor/jquery-jvectormap-2.0.3.min.js"></script>
 	<script src="js/vendor/jquery-jvectormap-world-merc.js"></script>
 	<script src="js/switcher.js"></script>
+	<script>
+	 document.addEventListener("DOMContentLoaded", () => {
+    const icon = document.getElementById("locationIcon");
+    if (icon) {
+      icon.addEventListener("click", getLocation);
+    }
+  });
 
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
+  }
+
+  async function showPosition(position) {
+    try {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+      const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+      const data = await response.json();
+
+      const address = data.address;
+      const area = address.neighbourhood || address.suburb || address.locality || "";
+      const city = address.city || address.town || address.village || address.county || "";
+
+      const locationText = `${area ? area + ', ' : ''}${city}`;
+      document.getElementById("locationInput").value = locationText || "Location not found";
+    } catch (err) {
+      alert("Failed to fetch location details.");
+    }
+  }
+
+  function showError(error) {
+    alert("Error getting location: " + error.message);
+  }
+	</script>
 </body>
 
 
 <!-- Mirrored from html.modernwebtemplates.com/towy/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Apr 2025 09:49:11 GMT -->
+
 </html>

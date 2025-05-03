@@ -1483,8 +1483,8 @@ blockquote img {
 	max-width: 75px;
 	display: block;
 	border-radius: 50%;
-	border: 4px solid #ffc326;
-	margin: 0 auto 55px;
+	border: 2px solid #ffc326;
+	/* margin: 0 auto 55px; */
 }
 
 blockquote .media {
@@ -1507,7 +1507,7 @@ blockquote .media h3, blockquote .media h4, blockquote .media h5 {
 }
 
 blockquote .item-meta {
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	font-style: normal;
 	opacity: 1;
 	text-transform: none;
@@ -14573,17 +14573,24 @@ tr.item-editable .media-left img {
     flex-direction: column;
     gap: 2rem;
     position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
     left: 2rem;
     z-index: 999;
 }
+.floating-widgets img{
+	width: 50px;
+}
 .add-new{
-    left: 90%;
+    left: 95%;
    
+}
+.add-new img{
+	border-radius: 10px;
+	width: 45px;
 }
 @media (max-width: 768px) {
     .add-new{
-        left: 75%;
+        left: 87%;
        
     }  
 }
@@ -14863,4 +14870,12 @@ tr.item-editable .media-left img {
   
   .open {
 	animation-iteration-count: 1;
+  }
+
+  .users-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-top: 30px;
   }
