@@ -14590,9 +14590,16 @@ tr.item-editable .media-left img {
 }
 @media (max-width: 768px) {
     .add-new{
-        left: 87%;
+        left: 84%;
        
-    }  
+    }
+	.floating-widgets img{
+		width: 40px;
+	}
+	.add-new img{
+		border-radius: 10px;
+		width: 37px;
+	}  
 }
 
 .floating-widgets i {
